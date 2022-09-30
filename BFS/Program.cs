@@ -27,6 +27,7 @@ namespace BFS
                 Console.WriteLine(vertex);
             }
         }
+      
         public static void BFS(Dictionary<int, List<int>> graph, int start)
         {
             Queue<int> queue = new Queue<int>(); //коллекция для обхода графа
@@ -61,6 +62,13 @@ namespace BFS
                 [6] = new List<int>() { 4 },
             };
             BFS(graph, 6);
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    Console.WriteLine(i*j);
+                }
+            }
         }
     }
 }
